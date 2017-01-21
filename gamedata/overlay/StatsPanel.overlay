@@ -1,0 +1,332 @@
+// Ogre overlay scripts
+StatsOverlay
+{
+	zorder 500
+	// Stats block
+	container BorderPanel(StatPanel)
+	{
+		metrics_mode pixels
+		vert_align bottom
+		left 5 
+		top -120
+		width 760
+		height 115
+		material StatsBlockCenter
+        	border_size 1 1 1 1
+        	border_material StatsBlockBorder
+        	border_topleft_uv     0.0000 1.0000 0.0039 0.9961
+	    	border_top_uv         0.0039 1.0000 0.9961 0.9961
+	    	border_topright_uv    0.9961 1.0000 1.0000 0.9961
+	    	border_left_uv        0.0000 0.9961 0.0039 0.0039
+	    	border_right_uv       0.9961 0.9961 1.0000 0.0039
+	    	border_bottomleft_uv  0.0000 0.0039 0.0039 0.0000
+        	border_bottom_uv      0.0039 0.0039 0.9961 0.0000
+	    	border_bottomright_uv 0.9961 0.0039 1.0000 0.0000
+			
+		element Panel(OutlinePanel1)
+		{
+			metrics_mode pixels
+			left 320
+			top 2
+			width 130
+			height 110
+			material CarOutline
+		}
+		
+		element Panel(OutlinePanel2)
+		{
+			metrics_mode pixels
+			left 620
+			top 2
+			width 130
+			height 110
+			material CarOutline
+		}
+		
+		element Panel(TurnPanel2)
+		{
+			metrics_mode pixels
+			left 0 //395
+			top 50
+			width 0 //50
+			height 10
+			material Line
+		}
+		
+		element Panel(AccelPanel2)
+		{
+			metrics_mode pixels
+			left 380
+			top 0 //50
+			width 10
+			height 0 //50
+			material Line
+		}
+		
+		element Panel(TurnPanel3)
+		{
+			metrics_mode pixels
+			left 0 //395
+			top 50
+			width 0 //50
+			height 10
+			material Line
+		}
+		
+		element Panel(AccelPanel3)
+		{
+			metrics_mode pixels
+			left 680
+			top 0 //50
+			width 10
+			height 0 //50
+			material Line
+		}
+		
+		element Panel(xAxis1)
+		{
+			metrics_mode pixels
+			left 330
+			top 54
+			width 110
+			height 1
+			material Line
+		}
+		
+		element Panel(yAxis1)
+		{
+			metrics_mode pixels
+			left 385
+			top 3
+			width 1
+			height 106
+			material Line
+		}
+		
+		element Panel(xAxis2)
+		{
+			metrics_mode pixels
+			left 630
+			top 54
+			width 110
+			height 1
+			material Line
+		}
+		
+		element Panel(yAxis2)
+		{
+			metrics_mode pixels
+			left 685
+			top 3
+			width 1
+			height 106
+			material Line
+		}
+
+		element TextArea(Speed1)
+		{
+			metrics_mode pixels
+			left 5
+			top 5
+			width 90
+			height 30
+			font_name BlueHighway
+			char_height 18
+			caption Speed (kmh):
+			colour_top 1 1 0.7
+			colour_bottom 1 1 0.7
+		}
+		element TextArea(BestLap1)
+		{
+			metrics_mode pixels
+			left 5
+			top 25
+			width 90
+			height 30
+			font_name BlueHighway
+			char_height 18
+			caption Best lap:
+			colour_top 1 1 0.7
+			colour_bottom 1 1 0.7
+		}
+		element TextArea(LastLap1)
+		{
+			metrics_mode pixels
+			left 5
+			top 45
+			width 90
+			height 30
+			font_name BlueHighway
+			char_height 18
+			caption Last lap:
+			colour_top 1 1 0.7
+			colour_bottom 1 1 0.7
+		}
+		element TextArea(CurrentLap1)
+		{
+			metrics_mode pixels
+			left 5
+			top 65
+			width 90
+			height 30
+			font_name BlueHighway
+			char_height 18
+			caption Current lap:
+			colour_top 1 1 0.7
+			colour_bottom 1 1 0.7
+		}
+		element TextArea(Training)
+		{
+			metrics_mode pixels
+			left 5
+			top 85
+			width 90
+			height 30
+			font_name BlueHighway
+			char_height 18
+			colour_top 1 1 0.7
+			colour_bottom 1 1 0.7
+		}
+
+		element TextArea(Speed2)
+		{
+			metrics_mode pixels
+			left 180
+			top 5
+			width 90
+			height 30
+			font_name BlueHighway
+			char_height 18
+			caption Speed (kmh):
+			colour_top 1 1 0.7
+			colour_bottom 1 1 0.7
+		}
+		element TextArea(BestLap2)
+		{
+			metrics_mode pixels
+			left 180
+			top 25
+			width 90
+			height 30
+			font_name BlueHighway
+			char_height 18
+			caption Best lap:
+			colour_top 1 1 0.7
+			colour_bottom 1 1 0.7
+		}
+		element TextArea(LastLap2)
+		{
+			metrics_mode pixels
+			left 180
+			top 45
+			width 90
+			height 30
+			font_name BlueHighway
+			char_height 18
+			caption Last lap:
+			colour_top 1 1 0.7
+			colour_bottom 1 1 0.7
+		}
+		element TextArea(CurrentLap2)
+		{
+			metrics_mode pixels
+			left 180
+			top 65
+			width 90
+			height 30
+			font_name BlueHighway
+			char_height 18
+			caption Current lap:
+			colour_top 1 1 0.7
+			colour_bottom 1 1 0.7
+		}
+		element TextArea(Speed3)
+		{
+			metrics_mode pixels
+			left 480
+			top 5
+			width 90
+			height 30
+			font_name BlueHighway
+			char_height 18
+			caption Speed (kmh):
+			colour_top 1 1 0.7
+			colour_bottom 1 1 0.7
+		}
+		element TextArea(BestLap3)
+		{
+			metrics_mode pixels
+			left 480
+			top 25
+			width 90
+			height 30
+			font_name BlueHighway
+			char_height 18
+			caption Best lap:
+			colour_top 1 1 0.7
+			colour_bottom 1 1 0.7
+		}
+		element TextArea(LastLap3)
+		{
+			metrics_mode pixels
+			left 480
+			top 45
+			width 90
+			height 30
+			font_name BlueHighway
+			char_height 18
+			caption Last lap:
+			colour_top 1 1 0.7
+			colour_bottom 1 1 0.7
+		}
+		element TextArea(CurrentLap3)
+		{
+			metrics_mode pixels
+			left 480
+			top 65
+			width 90
+			height 30
+			font_name BlueHighway
+			char_height 18
+			caption Current lap:
+			colour_top 1 1 0.7
+			colour_bottom 1 1 0.7
+		}
+		element TextArea(fps)
+		{
+			metrics_mode pixels
+			left 5
+			top -25
+			width 90
+			height 30
+			font_name BlueHighway
+			char_height 18
+			colour_top 1 1 0.7
+			colour_bottom 1 1 0.7
+		}
+		element TextArea(DebugText1)
+		{
+			metrics_mode pixels
+			left 5
+			top -45
+			width 200
+			height 30
+			font_name BlueHighway
+			char_height 16
+			colour_top 1 1 0.7
+			colour_bottom 1 1 0.7
+		}
+		element TextArea(DebugText2)
+		{
+			metrics_mode pixels
+			left 5
+			top -65
+			width 400
+			height 30
+			font_name BlueHighway
+			char_height 16
+			colour_top 1 1 0.7
+			colour_bottom 1 1 0.7
+		}
+	}
+}

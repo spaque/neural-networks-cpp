@@ -1,0 +1,154 @@
+material BodyMat
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.792157 0.27451 0.235294 
+			diffuse 0.792157 0.27451 0.235294 
+			specular 0.288235 0.288235 0.288235 20
+			emissive 0 0 0 
+		}
+	}
+}
+
+material BodyMat2
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.325490 0.505882 0.254901
+			diffuse 0.325490 0.505882 0.254901
+			specular 0.288235 0.288235 0.288235 20
+			emissive 0 0 0 
+		}
+	}
+}
+
+
+material BodyMat3
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.254901 0.372549 0.505882
+			diffuse 0.254901 0.372549 0.505882
+			specular 0.288235 0.288235 0.288235 20
+			emissive 0 0 0 
+		}
+	}
+}
+
+
+material ChromeMat
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.709804 0.709804 0.709804 
+			diffuse 0.709804 0.709804 0.709804 
+			specular 0.27 0.27 0.27 30
+			emissive 0 0 0 
+		}
+	}
+}
+
+
+material InteriorMat
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.262745 0.262745 0.262745 
+			diffuse 0.262745 0.262745 0.262745 
+			specular 0 0 0 10
+			emissive 0 0 0 
+		}
+	}
+}
+
+
+material Rim1Mat
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588 0.588 0.588 
+			diffuse 0.588 0.588 0.588 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture RIM_ALUM.DDS
+			}
+		}
+	}
+}
+
+
+material Rim2Mat
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588 0.588 0.588 
+			diffuse 0.588 0.588 0.588 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture SPK2_ALUM_HYB00.DDS
+			}
+		}
+	}
+}
+
+
+material TreadMat
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588 0.588 0.588 
+			diffuse 0.588 0.588 0.588 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture T_WALL_OUT00.DDS
+			}
+		}
+	}
+}
+
+
+material WindowMat
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588 0.588 0.588 
+			diffuse 0.588 0.588 0.588 
+			specular 0.18 0.18 0.18 30
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture RC_WINDOW.DDS
+			}
+		}
+	}
+}
+
+
