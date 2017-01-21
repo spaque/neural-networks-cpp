@@ -1,0 +1,81 @@
+material BarrierMat
+{
+	technique
+	{
+		pass
+		{
+			cull_hardware none
+			ambient 0.888 0.888 0.888 
+			diffuse 0.888 0.888 0.888 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture fence.dds
+			}
+		}
+	}
+}
+
+
+material Build21Mat
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588 0.588 0.588 
+			diffuse 0.588 0.588 0.588 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture build_21.dds
+			}
+		}
+	}
+}
+
+
+material GravelMat
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588 0.588 0.588 
+			diffuse 0.588 0.588 0.588 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture gravel.dds
+			}
+		}
+	}
+}
+
+
+material TrackBanMat
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588 0.588 0.588 
+			diffuse 0.588 0.588 0.588 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture tracban.dds
+			}
+		}
+	}
+}
+
+
